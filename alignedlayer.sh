@@ -77,8 +77,8 @@ sudo mv alignedlayerd /usr/local/bin/
 alignedlayerd init $MONIKER --chain-id alignedlayer
 
 # 从指定的 URL 安装创世文件
-curl -Ls https://raw.githubusercontent.com/a3165458/Alignedlayer/main/genesis.json > ~/.alignedlayer/config/genesis.json
-wget -O ~/.alignedlayer/config/addrbook.json http://95.216.42.217/addrbook.json 
+curl -Ls https://github.com/zkweb3/aligned_layer_shell_script/blob/main/genesis.json > ~/.alignedlayer/config/genesis.json
+wget -O ~/.alignedlayer/config/addrbook.json https://github.com/zkweb3/aligned_layer_shell_script/blob/main/addrbook.json
 
 # 设置种子节点和最小 gas 价格
 SEEDS="d1d43cc7c7aef715957289fd96a114ecaa7ba756@testnet-seeds.nodex.one:24210"
